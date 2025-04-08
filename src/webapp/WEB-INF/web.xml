@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+version="2.4">
+<servlet>
+    <servlet-name>CreditServlet</servlet-name>
+    <servlet-class>hello.CreditServlet</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>DepServlet</servlet-name>
+    <servlet-class>hello.DepServlet</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>DepForm</servlet-name>
+    <servlet-class>hello.DepForm</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CreditServlet</servlet-name>
+    <url-pattern>/form</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>DepServlet</servlet-name>
+    <url-pattern>/form1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>DepForm</servlet-name>
+    <url-pattern>/form2</url-pattern>
+</servlet-mapping>
+</web-app>

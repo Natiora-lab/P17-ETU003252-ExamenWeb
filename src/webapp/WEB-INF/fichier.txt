@@ -1,0 +1,19 @@
+Ajouter ligne credit,
+        libelle ex:frais bus
+        montant ex:100 000
+
+ligne depense
+            liste deroulant
+            montant
+            date
+
+            if(reste<sommedepense){
+                erreur
+            }
+
+dashboard
+        regrouper par ligne de credit /somme montant depense/reste
+
+        ex:
+        losir   10000  50000
+        losir   10000  50000
